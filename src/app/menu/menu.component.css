@@ -1,0 +1,19 @@
+.navbar{
+    background-color: white;
+    height: inherit;
+    width: 100%;
+    
+}
+
+.logo_img {
+
+    width: 50px;
+}
+
+/*.active{
+    background-color:greenyellow;
+    height: inherit;
+    width: 100px;
+    line-height: inherit;
+
+}*/

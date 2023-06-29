@@ -1,0 +1,12 @@
+card-list{
+    display: inline-block;
+    border: groove;
+}
+card-items{
+    border: groove;
+    height: 30%;
+    width: 30%;
+}
+.services{
+    display: inline-block;
+}

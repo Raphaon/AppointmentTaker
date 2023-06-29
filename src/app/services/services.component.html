@@ -1,0 +1,64 @@
+<div class="container">
+
+
+
+<section id="services" class="services">
+
+
+      <div class="section-title" style="text-align: center;">
+        <h2>Services</h2>
+        <p>Vous trouverez ici la liste des services disponible pour la compagnie suivante.</p>
+      </div>
+      <div class="container">
+
+        <div class="my-2">
+            <div class="row">
+                <div class="col-md-4">
+                    Filter : <b> {{ filterService }} </b>
+                </div>
+    
+                <div class="col-md-8">
+                    <form action="" class="form" >
+                        <input type="text" class="form form-control"  name="filterService" [(ngModel)]="filterService" > 
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    <hr>
+    
+        <div class="row" *ngIf="filteredServices != []  " >
+            <div *ngFor="let service of filteredServices" class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="icon-box">
+                <div class="icon">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <h4><a [routerLink]="['/services', service.ServiceID]">{{ service.Name }}</a></h4>
+                <p>{{ service.Description }}</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="row" *ngIf="filteredServices == []">
+            <p><b> Aucun resultat disponible  </b></p>
+        </div>
+    
+      </div>
+      
+
+    
+  </section><!-- End Services Section -->
+
+
+
+
+
+
+
+
+    
+    
+    
+</div>
+
+    
